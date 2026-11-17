@@ -25,7 +25,11 @@ function changeQty(cart, id, delta) {
 function cartLines(cart, menu) {
   return menu
     .filter((item) => cart[item.id])
-    .map((item) => ({ item, qty: cart[item.id], lineTotal: priceValue(item.price) * cart[item.id] }));
+    .map((item) => ({
+      item,
+      qty: cart[item.id],
+      lineTotal: priceValue(item.price) * cart[item.id]
+    }));
 }
 
 // The food total: the sum of every line.
