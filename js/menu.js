@@ -1,4 +1,4 @@
-```javascript
+
 // SWAAD EXPRESS MENU DATA
 // One line per dish. Fields: id, category, name, emoji (stands in for the photo), price.
 // RULE 1: every price is text that starts with the rupee sign, for example "₹249".
@@ -20,5 +20,3 @@ const MENU = [
 ];
 
 if (typeof module !== "undefined") module.exports = MENU;
-
-```
